@@ -1,0 +1,3 @@
+<?
+include("goosh/goosh.js");
+?>

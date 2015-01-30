@@ -1,0 +1,48 @@
+goosh.lib.namespace("goosh.lang");
+
+goosh.lang.list = {
+  'arabic' : 'ar',
+  'bulgarian' : 'bg',
+  'catalan' : 'ca',
+  'chinese' : 'zh',
+  'chinese_simplified' : 'zh-cn',
+  'chinese_traditional' : 'zh-tw',
+  'croatian' : 'hr',
+  'czech' : 'cs',
+  'danish' : 'da',
+  'dutch': 'nl',
+  'english' : 'en',
+  'estonian' : 'et',
+  'filipino' : 'tl',
+  'finnish' : 'fi',
+  'french' : 'fr',
+  'german' : 'de',
+  'greek' : 'el',
+  'hebrew' : 'iw',
+  'hindi' : 'hi',
+  'hungarian' : 'hu',
+  'indonesian' : 'id',
+  'italian' : 'it',
+  'japanese' : 'ja',
+  'korean' : 'ko',
+  'latvian' : 'lv',
+  'lithuanian' : 'lt',
+  'norwegian' : 'no',
+  'persian' : 'fa',
+  'polish' : 'pl',
+  'portuguese' : 'pt',
+  'romanian' : 'ro',
+  'russian' : 'ru',
+  'serbian' : 'sr',
+  'slovak' : 'sk',
+  'slovenian' : 'sl',
+  'spanish' : 'es',
+  'swedish' : 'sv',
+  'thai' : 'th',
+  'turkish' : 'tr',
+  'ukrainian' : 'uk',
+  'vietnamese' : 'vi'
+};
+
+goosh.lang.reverse = new Object();
+for(key in goosh.lang.list) goosh.lang.reverse[goosh.lang.list[key]] =key;
