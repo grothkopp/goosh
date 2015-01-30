@@ -1,0 +1,34 @@
+html { height: 100%; }
+body { background: #fff; font-size: 12px; font-family: monospace; height: 99%; margin:0px; padding: 0px; }
+form { padding: 0px; margin: 0px; }
+pre { font-size: 12px; }
+br { clear: both; }
+:focus { outline: 0; }
+input.cmdline { border: none; border: 0px; font-size: 12px; font-family: monospace; padding: 0px; margin:0px; width:100%; }
+table.inputtable { width:100%; vertical-align:top; }
+td.inputtd { width:100%; }
+#input { margin-left: 8px; color: #666; overflow: hidden; }
+#output{ margin-left: 8px; margin-top: 8px; max-width: 540px;}
+.less { color: #666; }
+.info { color: #090; }
+table { padding: 0px; margin: 0px; border-collapse: collapse; border-spacing: 0px; }
+td { padding: 0px; margin: 0px; vertical-align: top; font-size: 12px; font-family: monospace; }
+.help td { padding-right: 25px; font-size: 12px; }
+div#prompt { display: inline; white-space:nowrap; padding:0px; margin:0px; }
+img { border: none; }
+.num {width: 30px; text-align:right;}
+#mysite_webResult,
+.gsc-above-wrapper-area,
+.gsc-tabsAreaInvisible,
+.gsc-resultsHeader,
+.gs-watermark,
+.gsc-cursor-box,
+.gcsc-branding
+{display:none;}
+
+.gsc-adBlockVertical,
+.gsc-adBlock {
+float:left;
+margin-bottom:12px;
+}
+.gsc-resultsbox-visible {clear:both;}
