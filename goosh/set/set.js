@@ -77,6 +77,15 @@ goosh.set.list['style.vlink'].set = function(val){
   return true;
 }
 
+goosh.set.list['theme'] = new goosh.set.base("goosh.config.theme","","ace theme");
+goosh.set.list['theme'].set = function(val){
+//  goosh.gui.setstyleclass("a:visited","color: "+val);
+  goosh.gui.css('/css/'+val+'.css');
+  goosh.config.theme = val;
+  return true;
+}
+
+
 
 // #551a8b
 

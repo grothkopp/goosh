@@ -7,6 +7,7 @@ goosh.gui.promptel = false;
 
 goosh.gui.inputfield = false;
 goosh.gui.bodyel = false;
+goosh.gui.headel = false;
 
 goosh.gui.el = function(id){
  return document.getElementById(id);
@@ -20,6 +21,7 @@ goosh.gui.init = function(){
   goosh.gui.promptel = document.getElementById('prompt');
   goosh.gui.inputfield = document.getElementById('inputfield');
   goosh.gui.bodyel = document.getElementById('body');
+  goosh.gui.headel = document.getElementById('head');
 
 
   if(goosh.gui.inputfield.createTextRange) {
@@ -61,6 +63,17 @@ goosh.gui.out = function(text){
   goosh.gui.outputel.appendChild(div); 
   return div;
 }
+
+goosh.gui.css = function(file){
+  //goosh.gui.outputel.innerHTML += text;  
+  var style = document.createElement("link");
+  style.href = file;
+  style.rel= "stylesheet";
+  style.type = "text/css";
+  goosh.gui.bodyel.appendChild(style); 
+  return style;
+}
+
 
 goosh.gui.less = function(text){
   return "<span class='less'>"+text+"</span>";
