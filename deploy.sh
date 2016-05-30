@@ -24,7 +24,11 @@ cat goosh.html-dl | tail -n +$(($scriptLine+1)) >> goosh.html
 #exit
 echo "copy files"
 
-cp ../goosh.org/index.html ../goosh.org/index.html-autosave
+if [ ! -f ../goosh.org/index.html ]; then
+  mkdir ../goosh.org
+else
+  cp ../goosh.org/index.html ../goosh.org/index.html-autosave
+fi
 cp goosh.html ../goosh.org/index.html
 #echo "gzip"
 
